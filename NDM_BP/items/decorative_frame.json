@@ -1,0 +1,19 @@
+{
+    "format_version": "1.21.40",
+    "minecraft:item": {
+        "description": {
+            "identifier": "ndm:decorative_frame",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:custom_components": ["ndm:place_frame"],
+            "minecraft:icon": {
+                "textures": {
+                    "default": "ndm:decorative_frame"
+                }
+            }
+        }
+    }
+}

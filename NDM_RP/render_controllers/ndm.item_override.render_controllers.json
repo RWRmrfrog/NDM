@@ -1,0 +1,81 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.ndm.item_override": {
+			"geometry": "query.owner_identifier == 'ndm:decorative_frame' ? Geometry.flat : Geometry.default",
+			"materials": [
+				{
+					"*": "variable.is_enchanted ? material.enchanted : material.default"
+				}
+			],
+			"textures": [
+				"query.owner_identifier == 'ndm:decorative_frame' ? Texture.flat : Texture.default",
+				"texture.enchanted"
+			]
+		},
+		"controller.render.ndm.bow_override": {
+			"arrays": {
+				"textures": {
+					"array.bow_texture_frames": [
+						"texture.default",
+						"texture.bow_pulling_0",
+						"texture.bow_pulling_1",
+						"texture.bow_pulling_2"
+					]
+				},
+				"geometries": {
+					"array.bow_geo_frames": [
+						"geometry.default",
+						"geometry.bow_pulling_0",
+						"geometry.bow_pulling_1",
+						"geometry.bow_pulling_2"
+					]
+				}
+			},
+			"geometry": "query.owner_identifier == 'ndm:decorative_frame' ? Geometry.flat : array.bow_geo_frames[query.get_animation_frame]",
+			"materials": [
+				{
+					"*": "variable.is_enchanted ? material.enchanted : material.default"
+				}
+			],
+			"textures": [
+				"array.bow_texture_frames[query.get_animation_frame]",
+				"texture.enchanted"
+			]
+		},
+		"controller.render.ndm.crossbow_override": {
+			"arrays": {
+				"textures": {
+					"array.crossbow_texture_frames": [
+						"texture.default",
+						"texture.crossbow_pulling_0",
+						"texture.crossbow_pulling_1",
+						"texture.crossbow_pulling_2",
+						"texture.crossbow_arrow",
+						"texture.crossbow_rocket"
+					]
+				},
+				"geometries": {
+					"array.crossbow_geo_frames": [
+						"geometry.default",
+						"geometry.crossbow_pulling_0",
+						"geometry.crossbow_pulling_1",
+						"geometry.crossbow_pulling_2",
+						"geometry.crossbow_arrow",
+						"geometry.crossbow_rocket"
+					]
+				}
+			},
+			"geometry": "query.owner_identifier == 'ndm:decorative_frame' ? Geometry.flat : array.crossbow_geo_frames[query.get_animation_frame]",
+			"materials": [
+				{
+					"*": "variable.is_enchanted ? material.enchanted : material.default"
+				}
+			],
+			"textures": [
+				"array.crossbow_texture_frames[query.get_animation_frame]",
+				"texture.enchanted"
+			]
+		}
+	}
+}

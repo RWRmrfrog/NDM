@@ -1,0 +1,59 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Decorative Frame",
+		"description": "By RWRmrfrog",
+		"uuid": "13090a2a-bfa6-4922-b115-7592cf3e9a80",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			26,
+			30
+		]
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "9426b5b3-f8c4-4ea4-a250-34d5b69719e5",
+			"type": "data"
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/index.js",
+			"uuid": "febc66b4-845a-4153-b0bc-f49b93284c0c",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "febc66b4-845a-4153-b0bc-f49b93284c0c",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.0.0"
+        },
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0"
+		}
+	]
+}

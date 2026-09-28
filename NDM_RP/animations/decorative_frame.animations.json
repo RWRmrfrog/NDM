@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.ndm.decorative_frame.mount_tilt": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["(query.property('ndm:mount_type') == 'wall') ? 90 : (query.property('ndm:mount_type') == 'ceiling') ? 180 : 0", "0", "0"]
+				}
+			}
+		},
+		"animation.ndm.decorative_frame.item_rotation": {
+			"loop": true,
+			"bones": {
+				"itemSlot": {
+					"rotation": [0, "query.property('ndm:rotation') * 45", 0]
+				}
+			}
+		},
+		"animation.ndm.decorative_frame.scale": {
+      		"loop": true,
+      		"bones": {
+        		"itemSlot": {
+          			"scale": "query.property('ndm:scale')"
+        		}
+      		}
+    	}
+	}
+}

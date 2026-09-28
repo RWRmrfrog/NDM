@@ -1,0 +1,68 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "ndm:decorative_frame",
+            "materials": {
+                "default": "entity_emissive_alpha",
+                "transparent": "entity_alphablend"
+            },
+            "textures": {
+                "default": "textures/entity/decorative_frame",
+                "cube": "textures/ndm/cube"
+            },
+            "geometry": {
+                "default": "geometry.decorative_frame",
+                "cube": "geometry.cube"
+            },
+            "render_controllers": [
+                {
+                    "controller.render.cube": "query.is_name_any('Cube')"
+                },
+                {
+                    "controller.render.default": "!query.is_name_any('Cube')"
+                }
+            ],
+            "spawn_egg": {
+                "texture": "decorative_frame"
+            },
+            "enable_attachables": true,
+            "animations": {
+                "mount_tilt": "animation.ndm.decorative_frame.mount_tilt",
+                "item_rotation": "animation.ndm.decorative_frame.item_rotation",
+                "scale": "animation.ndm.decorative_frame.scale",
+                "item_pose": "controller.animation.ndm.item_pose",
+                "ndm.item_sprite_pose": "animation.item_pose.ndm.item_sprite_pose",
+                "ndm.equipment_pose" : "animation.item_pose.ndm.equipment_pose",
+                "ndm.fishing_rod_pose": "animation.item_pose.ndm.fishing_rod_pose",
+                "ndm.shield_pose": "animation.item_pose.ndm.shield_pose",
+                "ndm.stalagmite_pose": "animation.item_pose.ndm.stalagmite_pose",
+                "ndm.banner_pose": "animation.item_pose.ndm.banner_pose",
+                "ndm.attachable_pose": "animation.item_pose.ndm.attachable_pose",
+                "ndm.block_pose": "animation.item_pose.ndm.block_pose",
+                "ndm.chest_pose": "animation.item_pose.ndm.chest_pose",
+                "ndm.fence_pose": "animation.item_pose.ndm.fence_pose",
+                "ndm.wall_pose": "animation.item_pose.ndm.wall_pose",
+                "ndm.shelf_pose": "animation.item_pose.ndm.shelf_pose",
+                "ndm.decorated_pot_pose": "animation.item_pose.ndm.decorated_pot_pose",
+                "ndm.pumpkin_pose": "animation.item_pose.ndm.pumpkin_pose",
+                "ndm.carved_pumpkin_pose": "animation.item_pose.ndm.carved_pumpkin_pose",
+                "ndm.small_amethyst_bud_pose": "animation.item_pose.ndm.small_amethyst_bud_pose",
+                "ndm.skull_pose": "animation.item_pose.ndm.skull_pose",
+                "ndm.heavy_core_pose": "animation.item_pose.ndm.heavy_core_pose",
+                "ndm.copper_golem_pose": "animation.item_pose.ndm.copper_golem_pose",
+                "ndm.rod_pose": "animation.item_pose.ndm.rod_pose",
+                "ndm.button_pose": "animation.item_pose.ndm.button_pose",
+                "ndm.conduit_pose": "animation.item_pose.ndm.conduit_pose"
+            },
+            "scripts": {
+                "animate": [
+                    "mount_tilt",
+                    "item_rotation",
+                    "scale",
+                    "item_pose"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "ndm:decorative_frame": {
+        "events": {
+          "item_given": { 
+            "pitch" : 1.0,
+            "sound": "block.itemframe.add_item",
+            "volume" : 1.0
+          },
+          "item_taken": { 
+            "pitch" : 1.0,
+            "sound": "block.itemframe.remove_item",
+            "volume" : 1.0
+          }
+        }
+      }
+    }
+  }
+}

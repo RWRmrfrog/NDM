@@ -1,0 +1,267 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.item_pose.ndm.item_sprite_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [13, 14.5, -11.5],
+					"scale": 0.9
+				},
+				"itemContainer": {
+					"rotation": [-180, 0, -180],
+					"position": [1, 0.75, -5.15]
+				}
+			}
+		},
+		"animation.item_pose.ndm.equipment_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [18.5, -2.4, 3.85],
+					"scale": 0.53
+				},
+				"itemContainer": {
+					"rotation": [126, 0, -90],
+					"position": [-1.65, -0.7, -3.31]
+				}
+			}
+		},
+		"animation.item_pose.ndm.attachable_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"itemContainer": {
+					"rotation": [180, 0, 0],
+					"position": [0, -0.9, 0]
+				}
+			}
+		},
+		"animation.item_pose.ndm.fishing_rod_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [-5, 2, 4.75],
+					"scale": 0.7
+				},
+				"itemContainer": {
+					"rotation": [-125, 0, 90],
+					"position": [-9.8, -0.5, -7.8]
+				}
+			}
+		},
+		"animation.item_pose.ndm.shield_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [0, 0, 0],
+					"scale": 0.5
+				},
+				"itemContainer": {
+					"rotation": [180, 0, 90],
+					"position": [1.6, -0.4, -6.5]
+				}
+			}
+		},
+		"animation.item_pose.ndm.stalagmite_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [0, 2, 4.5],
+					"scale": 0.7
+				},
+				"itemContainer": {
+					"rotation": [180, 0, -90],
+					"position": [0.8, -0.4, -9]
+				}
+			}
+		},
+		"animation.item_pose.ndm.small_amethyst_bud_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [13, 14.5, -11.5],
+					"scale": 0.9
+				},
+				"itemContainer": {
+					"rotation": [-180, 0, -180],
+					"position": [2.75, 2.25, -7.15]
+				}
+			}
+		},
+		"animation.item_pose.ndm.banner_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [17.5, -10, 78],
+					"scale": 1.3
+				},
+				"itemContainer": {
+					"rotation": [180, 0, 90],
+					"position": [-1, -0.55, -14]
+				}
+			}
+		},
+		"animation.item_pose.ndm.block_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [-20, 45, 0],
+					"scale": 0.668
+				},
+				"itemContainer": {
+					"rotation": [-90, 0, 180],
+					"position": [-2.7, 3.73, 0.74]
+				}
+			}
+		},
+		"animation.item_pose.ndm.chest_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"itemContainer": {
+					"rotation": [-90, 0, 0],
+					"position": [4.05, -10.49, 0]
+				}
+			}
+		},
+		"animation.item_pose.ndm.fence_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"itemContainer": {
+					"rotation": [-90, 0, 90],
+					"position": [0, -3, 0]
+				}
+			}
+		},
+		"animation.item_pose.ndm.wall_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"itemContainer": {
+					"rotation": [-90, 0, 90],
+					"position": [-7.55, -6.64, -3.4]
+				}
+			}
+		},
+		"animation.item_pose.ndm.shelf_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"itemContainer": {
+					"rotation": [-90, 0, -90],
+					"position": [10.55, 5.95, -0.4]
+				}
+			}
+		},
+		"animation.item_pose.ndm.decorated_pot_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [63.9657, 1.8928, 135.5026],
+					"scale": 1.02
+				},
+				"itemContainer": {
+					"rotation": [180, 0, 90],
+					"position": [6.45, -4.91, -6.45]
+				}
+			}
+		},
+		"animation.item_pose.ndm.pumpkin_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"itemContainer": {
+					"rotation": [-90, 0, -90],
+					"position": [10.55, 4.074, -0.4]
+				}
+			}
+		},
+		"animation.item_pose.ndm.carved_pumpkin_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"itemContainer": {
+					"rotation": [-90, 0, -90],
+					"position": [10.55, 4.074, -0.4]
+				}
+			}
+		},
+		"animation.item_pose.ndm.skull_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [-20, 45, 0],
+					"scale": 1.5
+				},
+				"itemContainer": {
+					"rotation": [-90, 0, 180],
+					"position": [-8.33, 13.65, 0.15]
+				}
+			}
+		},
+		"animation.item_pose.ndm.heavy_core_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"itemContainer": {
+					"rotation": [-90, 0, 180],
+					"position": [-7.05, 10.21, -0.4]
+				}
+			}
+		},
+		"animation.item_pose.ndm.copper_golem_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [-20, 45, 0]
+				}
+			}
+		},
+		"animation.item_pose.ndm.rod_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [-20, 45, 0]
+				}
+			}
+		},
+		"animation.item_pose.ndm.button_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"itemContainer": {
+					"rotation": [-90, 0, 180],
+					"position": [-4.05, 10.6, -0.4]
+				}
+			}
+		},
+		"animation.item_pose.ndm.conduit_pose": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [-20, 45, 0],
+					"scale": 1.5
+				},
+				"itemContainer": {
+					"rotation": [-90, 0, 180],
+					"position": [-8.33, 13.65, 0.15]
+				}
+			}
+		}
+	}
+}

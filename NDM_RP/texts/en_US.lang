@@ -1,0 +1,3 @@
+entity.ndm:decorative_frame.name=Decorative Frame
+item.ndm:decorative_frame=Decorative Frame
+action.hint.exit.ndm:decorative_frame=Crouch to Exit

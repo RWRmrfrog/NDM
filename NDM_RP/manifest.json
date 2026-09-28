@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Decorative Frame",
+		"description": "By RWRmrfrog",
+		"uuid": "febc66b4-845a-4153-b0bc-f49b93284c0c",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			26,
+			30
+		]
+	},
+	"capabilities": [ "pbr" ],
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "13090a2a-bfa6-4922-b115-7592cf3e9a80",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

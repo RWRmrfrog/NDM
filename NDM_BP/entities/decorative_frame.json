@@ -1,0 +1,204 @@
+{
+	"format_version": "1.26.30",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ndm:decorative_frame",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"properties": {
+				"ndm:mount_type": {
+					"type": "enum",
+					"values": [
+						"floor",
+						"wall",
+						"ceiling"
+					],
+					"default": "floor",
+					"client_sync": true
+				},
+				"ndm:rotation": {
+					"type": "int",
+					"range": [
+						0,
+						7
+					],
+					"default": 0,
+					"client_sync": true
+				},
+				"ndm:scale": {
+					"type": "float",
+					"range": [
+						1.0,
+						4.0
+					],
+					"default": 1.0,
+					"client_sync": true
+				},
+				"ndm:has_item": {
+					"type": "bool",
+					"default": false,
+					"client_sync": true
+				}
+			}
+		},
+		"component_groups": {
+			"ndm:visible": {
+				"minecraft:renders_when_invisible": {}
+			},
+			"ndm:drop_item": {
+				"minecraft:transformation": {
+					"drop_equipment": true,
+					"into": "ndm:temp_entity"
+				}
+			}
+		},
+		"components": {
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"give_item": true,
+						"interact_text": "action.interact.decorative_frame",
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"domain": "hand",
+										"operator": "not",
+										"test": "has_equipment",
+										"subject": "other",
+										"value": "lead"
+									},
+									{
+										"subject": "other",
+										"test": "is_sneak_held",
+										"value": false
+									},
+									{
+										"operator": "not",
+										"test": "all_slots_empty",
+										"subject": "other",
+										"value": "hand"
+									}
+								]
+							},
+							"event": "ndm:holding_item"
+						}
+					}
+				]
+			},
+			"minecraft:inventory": {
+				"inventory_size": 1
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": "no",
+						"cause": "all"
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:nameable": {},
+			"minecraft:persistent": {},
+			"minecraft:collision_box": {
+				"height": 0.05,
+				"width": 0.05
+			},
+			"minecraft:spell_effects": {
+				"add_effects": [
+					{
+						"visible": false,
+						"effect": "invisibility",
+						"duration": "infinite"
+					}
+				]
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_altitude",
+									"subject": "self",
+									"operator": ">=",
+									"value": 330
+								},
+								{
+									"test": "is_altitude",
+									"subject": "self",
+									"operator": "<=",
+									"value": -63
+								}
+							]
+						},
+						"event": "ndm:drop_item"
+					}
+				]
+			}
+		},
+		"events": {
+			"ndm:initialize": {
+				"add": {
+					"component_groups": [
+						"ndm:visible"
+					]
+				}
+			},
+			"ndm:mount_floor": {
+				"set_property": {
+					"ndm:mount_type": "floor"
+				},
+				"trigger": {
+					"event": "ndm:initialize"
+				}
+			},
+			"ndm:mount_wall": {
+				"set_property": {
+					"ndm:mount_type": "wall"
+				},
+				"trigger": {
+					"event": "ndm:initialize"
+				}
+			},
+			"ndm:mount_ceiling": {
+				"set_property": {
+					"ndm:mount_type": "ceiling"
+				},
+				"trigger": {
+					"event": "ndm:initialize"
+				}
+			},
+			"ndm:holding_item": {
+				"set_property": {
+					"ndm:has_item": true
+				},
+				"remove": {
+					"component_groups": [
+						"ndm:visible"
+					]
+				}
+			},
+			"ndm:drop_item": {
+				"set_property": {
+					"ndm:has_item": false
+				},
+				"add": {
+					"component_groups": [
+						"ndm:drop_item",
+						"ndm:visible"
+					]
+				}
+			}
+		}
+	}
+}
